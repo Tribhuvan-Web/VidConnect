@@ -3,9 +3,9 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 const Home = () => {
   const now = new Date();
 
-  const Hours = now.getHours();
-  const Minutes = now.getMinutes();
-  const Seconds = now.getSeconds();
+  const Hours = now.getUTCHours();
+  const Minutes = now.getUTCMinutes();
+  const Seconds = now.getUTCSeconds();
   const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
 
   return (
