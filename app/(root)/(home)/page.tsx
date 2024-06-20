@@ -13,7 +13,7 @@ const Home = () => {
             Made by Tribhuvan
           </h2>
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-bold lg:text-7xl">With the help of next JS</h1>
+            <h1 className="text-4xl font-bold lg:text-7xl">Using API </h1>
             <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
           </div>
         </div>
