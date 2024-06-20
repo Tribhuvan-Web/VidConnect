@@ -3,9 +3,6 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 const Home = () => {
   const now = new Date();
 
-  const Hours = now.getHours();
-  const Minutes = now.getMinutes();
-  const Seconds = now.getSeconds();
   const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
 
   return (
@@ -16,7 +13,7 @@ const Home = () => {
             Made by Tribhuvan
           </h2>
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-bold lg:text-7xl">{Hours}:{Minutes}:{Seconds}</h1>
+            <h1 className="text-4xl font-bold lg:text-7xl">With the help of next JS</h1>
             <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
           </div>
         </div>
